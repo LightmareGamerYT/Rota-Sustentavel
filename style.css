@@ -33,10 +33,10 @@ body {
 }
 
 .espacamentoLateral a {
-    background: linear-gradient(#2B9109);
-    max-height: 100vh;
+    /* background: linear-gradient(#2B9109); */
+    max-height: 50vh;
     border-radius: 40px;
-    padding: 5px 5px;
+    padding: -10px -10px;
 }
 
 body {
@@ -93,6 +93,7 @@ header img {
     width: 70%;
     display: flex;
     justify-content: space-between;
+
 }
 
 .menu a {
@@ -103,6 +104,10 @@ header img {
     text-decoration-thickness: 2px;
 
     transition: text-decoration 500ms ease;
+    background-color: var(--cor-lima);
+    border-radius: 40px;
+
+    padding: 5px 5px;
 }
 
 .menu a:hover {
@@ -162,6 +167,7 @@ header img {
     background-color: var(--cor-lima);
     border-radius: 20px;
     padding: 10px 18px;
+    width: 280px;
 
     font-family: "myanmar-text", Regular;
 }
@@ -210,7 +216,6 @@ header img {
     height: 300px;
     border-radius: 40px;
 }
-
 #meuCarrossel {
     max-width: 1170px;
     width: 90%;
@@ -224,12 +229,13 @@ header img {
 
 #servicos .card {
     width: 300px;
-    margin: 20px;
-    padding: 40px 20px;
+    margin: 60px;
+    padding: 60px 20px;
     border-radius: 40px;
     background-color: #f2f2f2;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
+
 
     display: flex;
     flex-direction: column;
@@ -246,7 +252,7 @@ header img {
 }
 
 #servicos .card p {
-    font-family: "myanmar-text", regular;
+    font-family: "eras-medium-itc", regular;
     font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.5;
@@ -259,6 +265,7 @@ header img {
 
 #servicos .card:hover {
     border: solid 3px var(--cor-da-rota);
+
 }
 
 #servicos .card:hover svg {
@@ -274,9 +281,279 @@ header img {
     align-items: center;
 }
 
-.card img{
+.card img {
     border-radius: 50px;
     height: 200px;
     width: 200px;
 
+    text-decoration: text-decoration 500ms ease;
+
+}
+
+/* Login */
+
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-top: 100px;
+}
+
+#contato .titulo{
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#contato h2{
+    margin-left: 600px;
+    font-family: "eras-medium-itc", Bold;
+
+    
+}
+
+#contato form{
+    max-width: 980px;
+    width: 90%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: solid 3px var(--cor-azul-escuro);
+    border-radius: 40px;
+    background-color: #ece7e7;
+
+    color: var(--preto);
+    font-family: "eras-medium-itc", regular;
+    font-size: 17px;
+}
+
+.campo{
+    width: 60%;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao {
+    width: 60%;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.campo input{
+    height: 40px;
+
+    color: var(--cor-da-rota);
+    background-color: var(--cor-lima);
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+    outline: none;
+}
+
+.campo-descricao textarea{
+    color: var(--cor-preta);
+    background-color: var(--cor-lima);
+
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo label,
+.campo-descricao label{
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao textarea{
+    font-family: "eras-medium-itc", regular;
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder{
+    color: #ffffff;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus{
+    outline: 2px solid var(--cor-da-rota);
+}
+
+#contato form button{
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--cor-lima);
+    color: var(--cor-branco);
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "eras-medium-itc", regular;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover{
+    background-color: var(--cor-da-rota);
+}
+/* ----------------------------footer---------------------------- */
+
+footer{
+    height: 250px;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+footer img{
+    height: 150px;
+}
+
+footer .container-grid{
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais{
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.redes-sociais p{
+    color: var(--cor-lima);
+
+    font-family: "eras-medium-itc", regular;
+    font-size: 24px;
+}
+
+.icones-redes {
+    width: 240px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icones-redes a{
+    color: var(--cor-azul-escuro);
+
+}
+
+.icones-redes a:hover{
+    color: var(--cor-da-rota);
+
+}
+
+/* ------------------Feedback------------------ */
+
+#feedback form button:hover{
+    background-color: var(--cor-da-rota);
+}
+
+#feedback form button{
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--cor-lima);
+    color: var(--cor-branco);
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "eras-medium-itc", regular;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#feedback  {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-top: 100px;
+}
+
+#feedback form{
+    max-width: 980px;
+    width: 90%;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: solid 3px var(--cor-azul-escuro);
+    border-radius: 40px;
+    background-color: #ece7e7;
+
+    color: var(--preto);
+    font-family: "eras-medium-itc", regular;
+    font-size: 17px;
+}
+
+#feedback h2{
+    margin-left: 5px;
+    font-family: "eras-medium-itc", Bold;
+    margin: 0;
+
+    background-color: var(--cor-lima);
+    border-radius: 40px;
+    padding: 10px 10px;
+
+    color: var(--cor-branco);
+
+}
+
+#feedback label{
+    margin: 10px;
+    font-family: "eras-medium-itc", bold;
+
+    text-align: center;
+
+
+}
+
+#feedback textarea{
+    margin: 10px;
+}
+
+
+#feedback .estrelas-icones{
+    display: flex;
+    justify-content: center;
 }
